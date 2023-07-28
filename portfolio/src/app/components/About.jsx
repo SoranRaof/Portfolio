@@ -3,7 +3,7 @@ import React from "react";
 export default function () {
   return (
     <div>
-      <div className="w-full md:h-screen p-2 flex items-center py-16">
+      <div className="w-full md:h-screen p-2 flex md:flex-row flex-col items-center py-16">
         <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8"></div>
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">
@@ -34,13 +34,13 @@ export default function () {
             You can view my projects here.
           </p>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        {/* <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <img
             className="rounded-xl"
             src="https://images.unsplash.com/photo-1516101922849-2bf0be616449?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80"
             alt="placeholder"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
