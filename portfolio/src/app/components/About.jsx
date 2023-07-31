@@ -31,7 +31,7 @@ export default function () {
             now apply in the Software Development field.
           </p>
           <p className="py-2 text-[#5651e5] underline cursor-pointer">
-            You can view my projects here.
+            View my projects here
           </p>
         </div>
         {/* <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">

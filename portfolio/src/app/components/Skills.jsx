@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 export const Skills = () => {
@@ -8,7 +7,7 @@ export const Skills = () => {
         <p className="text-xl tracking-widest uppercase text-[#5651ef]">
           Skills
         </p>
-        <h2 className="py-4">What I can Do</h2>
+        <h2 className="py-4">What I know</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
@@ -70,7 +69,7 @@ export const Skills = () => {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>React.js</h3>
+                <h3>Next.js</h3>
               </div>
             </div>
           </div>
