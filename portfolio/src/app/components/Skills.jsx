@@ -2,7 +2,7 @@ import React from "react";
 
 export const Skills = () => {
   return (
-    <div className="w-full lg:h-screen p-2">
+    <div id="skills" className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#5651ef]">
           Skills
@@ -133,7 +133,7 @@ export const Skills = () => {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>MongoDb</h3>
+                <h3>MongoDB</h3>
               </div>
             </div>
           </div>
