@@ -17,8 +17,9 @@ export const Projects = () => {
           <ProjectItem
             title="Skin Scan"
             backgroundImg={skinScan}
-            projectUrl="https://main.d2lr9qljwqxiia.amplifyapp.com/"
+            projectUrl={"skinscan"}
           />
+
           {/* <ProjectItem
             title="NC News"
             projectUrl="https://main.d2lr9qljwqxiia.amplifyapp.com/"
