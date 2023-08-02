@@ -76,7 +76,7 @@ export default function SkinScan() {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+          <p className="underline cursor-pointer text-[#5651ef]">Back</p>
         </Link>
       </div>
     </div>

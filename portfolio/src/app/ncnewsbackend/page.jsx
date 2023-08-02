@@ -17,8 +17,8 @@ export default function NcNewsBackend() {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Skin Scan</h2>
-          <h3>Vue JS / TypeScript / AWS </h3>
+          <h2 className="py-2">NC News Back-End</h2>
+          <h3>Express / Node JS / JavaScript / PostgreSQL</h3>
         </div>
       </div>
 
@@ -70,7 +70,7 @@ export default function NcNewsBackend() {
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+          <p className="underline cursor-pointer text-[#5651ef]">Back</p>
         </Link>
       </div>
     </div>

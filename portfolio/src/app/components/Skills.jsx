@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export const Skills = () => {
   return (
@@ -12,10 +13,10 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  alt="placeholder"
+                  alt="javascript"
                   width="64"
                   height="64"
                 />
@@ -28,10 +29,10 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                  alt="placeholder"
+                  alt="typescript"
                   width="64"
                   height="64"
                 />
@@ -44,10 +45,10 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  alt="placeholder"
+                  alt="react"
                   width="64"
                   height="64"
                 />
@@ -60,7 +61,7 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
                   alt="placeholder"
@@ -76,10 +77,10 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                  alt="placeholder"
+                  alt="next"
                   width="64"
                   height="64"
                 />
@@ -92,10 +93,10 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  alt="placeholder"
+                  alt="html5"
                   width="64"
                   height="64"
                 />
@@ -108,10 +109,10 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
-                  alt="placeholder"
+                  alt="jest"
                   width="64"
                   height="64"
                 />
@@ -124,10 +125,10 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                  alt="placeholder"
+                  alt="mongodb"
                   width="64"
                   height="64"
                 />
@@ -140,8 +141,8 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
-                  className="rounded-xl"
+                <Image
+                  className="postgre"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
                   width="64"
                   height="64"
@@ -155,10 +156,10 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  alt="placeholder"
+                  alt="css3"
                   width="64"
                   height="64"
                 />
@@ -171,10 +172,10 @@ export const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
-                <img
+                <Image
                   className="rounded-xl"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-                  alt="placeholder"
+                  alt="tailwind"
                   width="64"
                   height="64"
                 />

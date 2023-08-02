@@ -1,11 +1,40 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 export const Contact = () => {
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    const data = {
+      name: event.target?.name?.value,
+      email: event.target?.email?.value,
+      subject: event.target?.subject?.value,
+      message: event.target?.message?.value,
+    };
+
+    console.log(data);
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      alert("Message Sent Successfully");
+    } else if (!response.ok) {
+      alert("Error Sending Message");
+    }
+  }
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -67,53 +96,68 @@ export const Contact = () => {
           {/* RIGHT */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
-                    <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="text"
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">
-                      Phone Number
+                    <label className="uppercase text-sm py-2" htmlFor="name">
+                      Name
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      minLength={3}
+                      max={150}
+                      required
+                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      autoComplete="off"
+                      id="name"
                     />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" type="text">
+                  <label className="uppercase text-sm py-2" htmlFor="email">
                     Email
                   </label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    required
+                    minLength={5}
+                    maxLength={150}
+                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    autoComplete="off"
+                    id="email"
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" type="text">
+                  <label className="uppercase text-sm py-2" htmlFor="subject">
                     Subject
                   </label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
+                    required
+                    name="subject"
                     type="text"
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" type="text">
+                  <label
+                    className="uppercase text-sm py-2"
+                    htmlFor="Message"
+                    type="text"
+                  >
                     Message
                   </label>
                   <textarea
                     className="border-2 rounded-lg p-3 border-gray-300"
+                    required
+                    maxLength={500}
                     rows={10}
+                    name="message"
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4 ">
+                <button
+                  className="w-full p-4 text-gray-100 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff]"
+                  // type="submit"
+                >
                   Send Message
                 </button>
               </form>

@@ -19,9 +19,11 @@ const Navbar = () => {
         <Link href={"/"}>
           <Image
             src="/../public/assets/SR-logo-purple.png"
-            alt="/"
+            alt="srlogo"
             width="125"
             height="50"
+            priority
+            style={{ width: "auto", height: "auto" }}
           />
         </Link>
         <div>
@@ -71,7 +73,9 @@ const Navbar = () => {
                   src="/../public/assets/SR-logo-purple.png"
                   width="87"
                   height="35"
-                  alt="/"
+                  alt="srlogo"
+                  priority
+                  style={{ width: "auto", height: "auto" }}
                 />
               </Link>
               <div
@@ -87,7 +91,7 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-          <div className="py-4 flex-col">
+          <div className="py-4 flex-col" onClick={handleNav}>
             <ul className="uppercase">
               <Link href="/">
                 <li className="py-4 text-sm">Home</li>

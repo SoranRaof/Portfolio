@@ -32,9 +32,9 @@ export const Projects = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectItem
               title="Northcoders News"
-              tech="Express / Node JS / JavaScript / PostgreSQL"
+              tech={"Express / Node JS / JavaScript / PostgreSQL"}
               backgroundImg={ncNews}
-              projectUrl="ncnewsbackend"
+              projectUrl={"ncnewsbackend"}
             />
             {/* <ProjectItem
             title="NC News"
