@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import skinScan from "../../../public/assets/skin-scan.png";
+import ncNewsBackend from "../../../public/assets/NC-news-back-end.jpeg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-export default function SkinScan() {
+export default function NcNewsBackend() {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,7 +13,7 @@ export default function SkinScan() {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={skinScan}
+          src={ncNewsBackend}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -28,34 +28,22 @@ export default function SkinScan() {
             Project
           </p>
           <h2 className="py-2">Overview</h2>
-          <br></br>
-          <p>**Ongoing project**</p>
-          <br></br>
           <p>
-            An app that utilises machine learning technology for diagnosing skin
-            conditions. In this project, the machine learning algorithm was
-            built using PyTorch, Flask, and Heroku. For the frontend, we
-            utilised Vue, TypeScript, and AWS Amplify. To ensure seamless
-            integration, the backend was built with JavaScript and Express,
-            which is hosted on AWS EC2. Additionally, the app uses MySQL as the
-            database, which is hosted on Amazon RDS.
+            I built a news article backend using Express.js, which involved
+            creating restful API routes for accessing topics, articles and
+            comments, and implementing error handling middleware for handling
+            custom, server and PostgreSQL errors. To ensure the API was
+            functioning correctly, I wrote a test file using Jest, which
+            provided good coverage of the backend. I also created a
+            user-friendly frontend interface using React.
           </p>
           <a
-            href="https://github.com/SoranRaof/skin-scanner-front-end"
+            href="https://github.com/SoranRaof/NC-News-Backend"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8 cursor-pointer hover:scale-110 ease-in duration-300">
               Code
-            </button>
-          </a>
-          <a
-            href="https://main.d2lr9qljwqxiia.amplifyapp.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="px-8 py-2 mt-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              Demo
             </button>
           </a>
         </div>
@@ -64,13 +52,19 @@ export default function SkinScan() {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Vue.js
+                <RiRadioButtonFill className="pr-1" /> Node.js
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> TypeScript
+                <RiRadioButtonFill className="pr-1" /> JavaScript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> AWS Amplify
+                <RiRadioButtonFill className="pr-1" /> Express.js
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> PostgreSQL
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Jest
               </p>
             </div>
           </div>

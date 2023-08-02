@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 import ProjectItem from "./ProjectItem";
 import skinScan from "../../../public/assets/skin-scan.png";
 import ncNews from "../../../public/assets/NC-news-back-end.jpeg";
@@ -16,6 +14,7 @@ export const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Skin Scan"
+            tech={"Vue JS / TypeScript / AWS"}
             backgroundImg={skinScan}
             projectUrl={"skinscan"}
           />
@@ -33,8 +32,9 @@ export const Projects = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectItem
               title="Northcoders News"
+              tech="Express / Node JS / JavaScript / PostgreSQL"
               backgroundImg={ncNews}
-              projectUrl="https://github.com/SoranRaof/NC-News-Backend"
+              projectUrl="ncnewsbackend"
             />
             {/* <ProjectItem
             title="NC News"
