@@ -58,7 +58,7 @@ export const Contact = () => {
                 <p>Full Stack Developer</p>
                 <br></br>
                 <p>
-                  I'm available for full-time positions. Feel free to contact
+                  I am available for full-time positions. Feel free to contact
                   me.
                 </p>
               </div>
