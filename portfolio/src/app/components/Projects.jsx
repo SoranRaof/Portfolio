@@ -31,7 +31,7 @@ export const Projects = () => {
           <h2 className="py-4">Back-End Projects</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectItem
-              title="Northcoders News"
+              title="NC News"
               tech={"Express / Node JS / JavaScript / PostgreSQL"}
               backgroundImg={ncNews}
               projectUrl={"ncnewsbackend"}
