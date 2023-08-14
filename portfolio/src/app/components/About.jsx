@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function About() {
@@ -26,9 +27,11 @@ export default function About() {
           commitment. It showcases my ability to adapt, learn new skills,
           effectively organise my time, and embrace challenges head-on.
         </p>
-        <p className="py-2 text-[#5651e5] underline cursor-pointer">
-          View my projects here
-        </p>
+        <Link href="/#projects">
+          <p className="py-2 text-[#5651e5] underline cursor-pointer">
+            View my projects here
+          </p>
+        </Link>
       </div>
       {/* <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <img
