@@ -145,6 +145,7 @@ export const Skills = () => {
                   className="postgre"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
                   width="64"
+                  alt="postgresql"
                   height="64"
                 />
               </div>

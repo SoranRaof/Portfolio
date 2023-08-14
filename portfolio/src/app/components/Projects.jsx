@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import skinScan from "../../../public/assets/skin-scan.png";
-import ncNews from "../../../public/assets/NC-news-back-end.jpeg";
+import ncNewsFrontEnd from "../../../public/assets/NC-News-Front-End.png";
+import Promptopia from "../../../public/assets/Platform-Prompt.png";
 
 export const Projects = () => {
   return (
@@ -10,7 +11,6 @@ export const Projects = () => {
         <p className="text-xl tracking-widest uppercase text-[#5651ef]">
           Projects
         </p>
-        <h2 className="py-4">Front-End Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Skin Scan"
@@ -19,28 +19,19 @@ export const Projects = () => {
             projectUrl={"skinscan"}
           />
 
-          {/* <ProjectItem
-            title="NC News"
-            projectUrl="https://main.d2lr9qljwqxiia.amplifyapp.com/"
-          /> */}
-        </div>
-      </div>
+          <ProjectItem
+            title="Northcoders News"
+            tech={"Javascript / React JS"}
+            backgroundImg={ncNewsFrontEnd}
+            projectUrl={"ncnewsfrontend"}
+          />
 
-      <div className="w-full">
-        <div className="max-w-[1240px] mx-auto px-2 py-16">
-          <h2 className="py-4">Back-End Projects</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <ProjectItem
-              title="NC News"
-              tech={"Express / Node JS / JavaScript / PostgreSQL"}
-              backgroundImg={ncNews}
-              projectUrl={"ncnewsbackend"}
-            />
-            {/* <ProjectItem
-            title="NC News"
-            projectUrl="https://main.d2lr9qljwqxiia.amplifyapp.com/"
-          /> */}
-          </div>
+          <ProjectItem
+            title="Northcoders News"
+            tech={"Javascript / Next JS"}
+            backgroundImg={Promptopia}
+            projectUrl={"promptopia"}
+          />
         </div>
       </div>
     </div>

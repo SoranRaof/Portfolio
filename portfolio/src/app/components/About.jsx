@@ -13,10 +13,8 @@ export default function About() {
         </p>
         <h2 className="py-4">Who I Am</h2>
         <p className="py-2 text-gray-600">
-          As I go through a career change from being a Personal Trainer, I have
-          dedicated significant time and effort to pursue a transition into
-          Software Development. I have been studying diligently at college and
-          in my spare time, I also recently completed the Northcoders Software
+          I am a Full Stack Developer that has been studying diligently in my
+          spare time, and recently completed the Northcoders Software
           Development Bootcamp, which has equipped me with valuable skills and
           knowledge in the field. This pursuit was driven by a strong desire to
           explore my passion for technology and create a meaningful impact
@@ -27,10 +25,6 @@ export default function About() {
           learning Software Development, I have demonstrated my unwavering
           commitment. It showcases my ability to adapt, learn new skills,
           effectively organise my time, and embrace challenges head-on.
-          Additionally, I firmly believe that my experience as a personal
-          trainer has equipped me with valuable transferable skills such as
-          discipline, communication, and problem-solving, which I can now apply
-          in the Software Development field.
         </p>
         <p className="py-2 text-[#5651e5] underline cursor-pointer">
           View my projects here

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { AiOutlineMail } from "react-icons/ai";
@@ -8,7 +8,11 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 export const Contact = () => {
+  const [loading, setLoading] = useState(false);
+
   async function handleSubmit(event) {
+    setLoading(true);
+
     event.preventDefault();
 
     const data = {
@@ -18,8 +22,6 @@ export const Contact = () => {
       message: event.target?.message?.value,
     };
 
-    console.log(data);
-
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -28,11 +30,15 @@ export const Contact = () => {
       body: JSON.stringify(data),
     });
 
+    setLoading(false);
+
     if (response.ok) {
       alert("Message Sent Successfully");
     } else if (!response.ok) {
       alert("Error Sending Message");
     }
+
+    event.target.reset();
   }
 
   return (
@@ -156,9 +162,17 @@ export const Contact = () => {
                 </div>
                 <button
                   className="w-full p-4 text-gray-100 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff]"
-                  // type="submit"
+                  type="submit"
+                  disabled={loading} // Disable the button while loading
                 >
-                  Send Message
+                  {loading ? (
+                    <div
+                      className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"
+                      role="status"
+                    ></div>
+                  ) : (
+                    <span>Send Message</span>
+                  )}
                 </button>
               </form>
             </div>

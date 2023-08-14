@@ -3,13 +3,6 @@ import nodemailer from "nodemailer";
 export default async function ContactApi(req, res) {
   const { name, email, subject, message } = req.body;
 
-  const data = {
-    name,
-    email,
-    subject,
-    message,
-  };
-
   const user = process.env.user;
 
   const transporter = nodemailer.createTransport({
