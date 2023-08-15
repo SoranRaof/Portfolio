@@ -1,11 +1,13 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
-import "tw-elements-react/dist/css/tw-elements-react.min.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  icons: {
+    icon: "/icon.ico",
+  },
   title: "Soran Raof Portfolio",
   description: "Full Stack Developer Portfolio",
 };
