@@ -1,4 +1,4 @@
-import { Message } from "@/lib/validators/messages";
+import { Message } from "../lib/validators/messages";
 import { nanoid } from "nanoid";
 import { ReactNode, createContext, useState } from "react";
 
