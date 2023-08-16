@@ -27,7 +27,7 @@ export const Projects = () => {
           />
 
           <ProjectItem
-            title="Northcoders News"
+            title="Ai Prompt Share"
             tech={"Javascript / Next JS"}
             backgroundImg={Promptopia}
             projectUrl={"promptopia"}

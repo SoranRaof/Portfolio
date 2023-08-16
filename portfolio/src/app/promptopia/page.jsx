@@ -17,7 +17,7 @@ export default function Promptopia() {
           alt="Nc News"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">NC News Back-End</h2>
+          <h2 className="py-2">Promptopia</h2>
           <h3>Next JS / JavaScript / Next Auth /MongoDB</h3>
         </div>
       </div>
@@ -29,29 +29,29 @@ export default function Promptopia() {
           </p>
           <h2 className="py-2">Overview</h2>
           <p>
-            I built a news article backend using Express.js, which involved
-            creating restful API routes for accessing topics, articles and
-            comments, and implementing error handling middleware for handling
-            custom, server and PostgreSQL errors. To ensure the API was
-            functioning correctly, I wrote a test file using Jest, which
-            provided good coverage of the backend. I also created a
-            user-friendly frontend using React by implementing dynamic rendering
-            of articles fetched from the backend API using Axios. This allowed
-            users to navigate through articles, view their content, and engage
-            with the associated comments. I also used Tailwind CSS to enhance
-            the styling aspects of the application and applied responsive design
-            principles that automatically adjusted the layout, spacing, and
-            typography based on the device's screen size.
+            I have developed a web application centered around AI prompts,
+            designed to share and discover among users. Both the frontend and
+            backend was created using Next.js. The main goal for this project
+            was to learn how to build a full stack CRUD application using only
+            Next.js.
           </p>
           <br />
           <p>
-            I also created a user-friendly frontend using React by implementing
-            dynamic rendering of articles fetched from the backend API using
-            Axios. This allows users to navigate through articles, view their
-            content, and engage with the associated comments. I also used
-            Tailwind CSS to enhance the styling aspects of the application and
-            applied responsive design principles that automatically adjusted the
-            layout, spacing, and typography based on the device's screen size.
+            I used Next.js's dynamic API routes, I established an efficient
+            foundation for API endpoints. Additionally, I integrated user
+            authentication through Next Auth, ensuring a secure and personalized
+            experience. Users have the capability to effortlessly create, read,
+            update, and delete prompts. Users can also filter specific hashtags,
+            thereby enabling others to discover content aligned with their
+            interests. Furthermore, users can seamlessly navigate through
+            different profiles, fostering a sense of community engagement.
+          </p>
+          <br />
+          <p>
+            I chose MongoDB for the storage and retrieval of user-generated
+            content, enhancing the overall user experience. Finally I used
+            Tailwind CSS to create a pleasing user interface that is visually
+            appealing and responsive.
           </p>
           <a
             href="https://github.com/SoranRaof/Share-Ai-Prompts/tree/main/share-ai-prompts"
