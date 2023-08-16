@@ -29,15 +29,14 @@ export default function Promptopia() {
           </p>
           <h2 className="py-2">Overview</h2>
           <p>
-            I have developed a web application centered around AI prompts,
-            designed to share and discover among users. Both the frontend and
-            backend was created using Next.js. The main goal for this project
-            was to learn how to build a full stack CRUD application using only
-            Next.js.
+            I developed a web application centered around AI prompts, designed
+            to share and discover among users. Both the frontend and backend was
+            created using Next.js. The main goal for this project was to learn
+            how to build a full stack CRUD application using only Next.js.
           </p>
           <br />
           <p>
-            I used Next.js's dynamic API routes, I established an efficient
+            I used Next.js's dynamic API routes to create an efficient
             foundation for API endpoints. Additionally, I integrated user
             authentication through Next Auth, ensuring a secure and personalized
             experience. Users have the capability to effortlessly create, read,
