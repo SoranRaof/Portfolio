@@ -3,6 +3,7 @@ import ProjectItem from "./ProjectItem";
 import skinScan from "../../../public/assets/skin-scan.png";
 import ncNewsFrontEnd from "../../../public/assets/NC-News-Front-End.png";
 import Promptopia from "../../../public/assets/Platform-Prompt.png";
+import taskManager from "../../../public/assets/task-manager.png";
 
 export const Projects = () => {
   return (
@@ -21,16 +22,23 @@ export const Projects = () => {
 
           <ProjectItem
             title="Northcoders News"
-            tech={"Javascript / React JS"}
+            tech={"Javascript / React JS / PostgreSQL"}
             backgroundImg={ncNewsFrontEnd}
             projectUrl={"ncnewsfrontend"}
           />
 
           <ProjectItem
             title="Ai Prompt Share"
-            tech={"Javascript / Next JS"}
+            tech={"Javascript / Next JS / NextAuth / MongoDB"}
             backgroundImg={Promptopia}
             projectUrl={"promptopia"}
+          />
+
+          <ProjectItem
+            title="Task Manager App"
+            tech={"TypeScript / Next JS / Express / MongoDB"}
+            backgroundImg={taskManager}
+            projectUrl={"taskmanager"}
           />
         </div>
       </div>
