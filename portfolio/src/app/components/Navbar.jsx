@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href={"/"}>
+        <Link href={"/#home"}>
           <Image
             src="/assets/SR-logo-purple.png"
             alt="srlogo"
@@ -30,9 +30,6 @@ const Navbar = () => {
           <ul className="hidden md:flex">
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-            </Link>
-            <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
             <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
@@ -68,7 +65,7 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href={"/"}>
+              <Link href={"/#home"}>
                 <Image
                   src="/assets/SR-logo-purple.png"
                   width="87"
@@ -93,11 +90,8 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex-col" onClick={handleNav}>
             <ul className="uppercase">
-              <Link href="/">
+              <Link href="/#home">
                 <li className="py-4 text-sm">Home</li>
-              </Link>
-              <Link href="/#about">
-                <li className="py-4 text-sm">About</li>
               </Link>
               <Link href="/#skills">
                 <li className="py-4 text-sm">Skills</li>
